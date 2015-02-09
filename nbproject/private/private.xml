@@ -3,7 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/syst3m/NetBeansProjects/Web-Services-hw2-TravelEgency/web/index.html</file>
+            <file>file:/home/syst3m/NetBeansProjects/Web-Services-hw2-TravelEgency/src/java/web/services/hw2/travel/TravelAgencyWS.java</file>
+            <file>file:/home/syst3m/NetBeansProjects/Web-Services-hw2-TravelEgency/src/java/web/services/hw2/travel/model/Flight.java</file>
+            <file>file:/home/syst3m/NetBeansProjects/Web-Services-hw2-TravelEgency/src/java/web/services/hw2/travel/model/Trip.java</file>
+            <file>file:/home/syst3m/NetBeansProjects/Web-Services-hw2-TravelEgency/src/java/web/services/hw2/travel/model/Flights.java</file>
         </group>
     </open-files>
 </project-private>

@@ -13,13 +13,13 @@ import java.util.List;
  * @author Alex
  */
 public class Trip {
-    private List<Flight> trip = new ArrayList<>();
+    private List<Flight> trip = new ArrayList<Flight>();
     
     public Trip() {
     }
     
     public Trip(Flight newFlight) {
-        trip = new ArrayList<>();
+        
         trip.add(newFlight);
     }
     
@@ -35,5 +35,16 @@ public class Trip {
         
         
     }
+
     
+    
+   @Override
+   public String toString(){
+       StringBuilder sb = new StringBuilder();
+       sb.append("Trip is: "); 
+       for(int i = 0; i < trip.size(); ++i){
+           sb.append(trip.get(i).getDeparture() + " to " + trip.get(i).getDestination()).append("\n");
+       }
+       return sb.toString();
+   }
 }
