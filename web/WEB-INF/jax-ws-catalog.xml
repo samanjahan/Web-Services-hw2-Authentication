@@ -8,4 +8,6 @@
     <system systemId="http://localhost:8080/FlightCheckerWS/FlightCheckerWS?xsd=1" uri="wsdl/localhost_8080/FlightCheckerWS/FlightCheckerWS.xsd_1.xsd"/>
     <system systemId="http://localhost:8080/BankServices/BankServices?wsdl" uri="wsdl/localhost_8080/BankServices/BankServices.wsdl"/>
     <system systemId="http://localhost:8080/BankServices/BankServices?xsd=1" uri="wsdl/localhost_8080/BankServices/BankServices.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/BankServicesService/BankWS?wsdl" uri="wsdl/localhost_8080/BankServicesService/BankWS.wsdl"/>
+    <system systemId="http://localhost:8080/BankServicesService/BankWS?wsdl=1" uri="wsdl/localhost_8080/BankServicesService/BankWS.wsdl_1.wsdl"/>
 </catalog>

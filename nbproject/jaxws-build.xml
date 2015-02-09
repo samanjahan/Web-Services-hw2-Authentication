@@ -59,21 +59,21 @@
         <delete dir="${build.generated.sources.dir}/jax-ws/web/services/hw2/travelAgency/webService"/>
         <delete dir="${build.generated.dir}/jax-wsCache/FlightCheckerWS"/>
     </target>
-    <target name="wsimport-client-BankServices" depends="wsimport-init">
-        <mkdir dir="${build.generated.dir}/jax-wsCache/BankServices"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BankServices" destdir="${build.generated.dir}/jax-wsCache/BankServices" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/BankServices/wsdl/localhost_8080/BankServices/BankServices.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/BankServices/BankServices?wsdl" xnocompile="true" xendorsed="true" package="web.services.hw2.travelAgency.webService.bank">
-            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/BankServices/wsdl/localhost_8080/BankServices/BankServices.wsdl"/>
-            <produces dir="${build.generated.dir}/jax-wsCache/BankServices"/>
+    <target name="wsimport-client-BankWS" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/BankWS"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/BankWS" destdir="${build.generated.dir}/jax-wsCache/BankWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/BankWS/wsdl/localhost_8080/BankServicesService/BankWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/BankServicesService/BankWS?wsdl" xnocompile="true" xendorsed="true" package="web.services.hw2.travelAgency.bank">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/BankWS/wsdl/localhost_8080/BankServicesService/BankWS.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/BankWS"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
-            <fileset dir="${build.generated.dir}/jax-wsCache/BankServices">
+            <fileset dir="${build.generated.dir}/jax-wsCache/BankWS">
                 <include name="**/*.java"/>
             </fileset>
         </copy>
     </target>
-    <target name="wsimport-client-clean-BankServices" depends="-init-project">
-        <delete dir="${build.generated.sources.dir}/jax-ws/web/services/hw2/travelAgency/webService/bank"/>
-        <delete dir="${build.generated.dir}/jax-wsCache/BankServices"/>
+    <target name="wsimport-client-clean-BankWS" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/web/services/hw2/travelAgency/bank"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/BankWS"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-FlightCheckerWS, wsimport-client-BankServices"/>
+    <target name="wsimport-client-generate" depends="wsimport-client-FlightCheckerWS, wsimport-client-BankWS"/>
 </project>

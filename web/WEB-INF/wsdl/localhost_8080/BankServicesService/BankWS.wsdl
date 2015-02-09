@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://j2ee.netbeans.org/wsdl/Web-Services-hw2-Bank/java/bankWSDL" xmlns:ns="http://bank/" name="bankWSDL" targetNamespace="http://bank/">
+<wsdl:import namespace="http://bank/" location="http://localhost:8080/BankServicesService/BankWS?wsdl=1"/>
+<wsdl:binding name="BankServicesBinding" type="ns:BankServices">
+<soap:binding xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/>
+<wsdl:operation name="pay">
+<soap:operation xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" soapAction="pay_action"/>
+<wsdl:input name="input1">
+<soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" namespace="http://bank/" use="literal"/>
+</wsdl:input>
+<wsdl:output name="output1">
+<soap:body xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" namespace="http://bank/" use="literal"/>
+</wsdl:output>
+</wsdl:operation>
+</wsdl:binding>
+<wsdl:service name="BankServicesService">
+<wsdl:port name="BankServicesPort" binding="ns:BankServicesBinding">
+<soap:address xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" location="http://localhost:8080/BankServicesService/BankWS"/>
+</wsdl:port>
+</wsdl:service>
+</definitions>

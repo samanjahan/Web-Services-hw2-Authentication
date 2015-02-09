@@ -42,10 +42,10 @@
         </wsimport-option>
       </wsimport-options>
     </client>
-    <client name="BankServices">
-      <wsdl-url>http://localhost:8080/BankServices/BankServices?wsdl</wsdl-url>
-      <local-wsdl-file>localhost_8080/BankServices/BankServices.wsdl</local-wsdl-file>
-      <package-name forceReplace="true">web.services.hw2.travelAgency.webService.bank</package-name>
+    <client name="BankWS">
+      <wsdl-url>http://localhost:8080/BankServicesService/BankWS?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/BankServicesService/BankWS.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">web.services.hw2.travelAgency.bank</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
         <wsimport-option>
@@ -62,7 +62,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://localhost:8080/BankServices/BankServices?wsdl</wsimport-option-value>
+          <wsimport-option-value>http://localhost:8080/BankServicesService/BankWS?wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
@@ -74,7 +74,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>package</wsimport-option-name>
-          <wsimport-option-value>web.services.hw2.travelAgency.webService.bank</wsimport-option-value>
+          <wsimport-option-value>web.services.hw2.travelAgency.bank</wsimport-option-value>
         </wsimport-option>
       </wsimport-options>
     </client>
