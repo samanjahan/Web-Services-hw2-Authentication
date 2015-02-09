@@ -39,9 +39,13 @@ public class Person {
 
     @Override
     public int hashCode() {
-        int hash = 7;
+        int hash = 5;
+        hash = 29 * hash + Objects.hashCode(this.name);
+        hash = 29 * hash + Objects.hashCode(this.password);
         return hash;
     }
+
+    
 
     @Override
     public boolean equals(Object obj) {

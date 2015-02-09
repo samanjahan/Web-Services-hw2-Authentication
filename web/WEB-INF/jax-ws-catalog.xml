@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/TravelAgencyWS/TravelAgencyWS?wsdl" uri="wsdl/localhost_8080/TravelAgencyWS/TravelAgencyWS.wsdl"/>
+    <system systemId="http://localhost:8080/TravelAgencyWS/TravelAgencyWS?xsd=1" uri="wsdl/localhost_8080/TravelAgencyWS/TravelAgencyWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/TravelAgencyWS/FlightCheckerWS?wsdl" uri="wsdl/localhost_8080/TravelAgencyWS/FlightCheckerWS.wsdl"/>
+    <system systemId="http://localhost:8080/TravelAgencyWS/FlightCheckerWS?xsd=1" uri="wsdl/localhost_8080/TravelAgencyWS/FlightCheckerWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/FlightCheckerWS/FlightCheckerWS?wsdl" uri="wsdl/localhost_8080/FlightCheckerWS/FlightCheckerWS.wsdl"/>
+    <system systemId="http://localhost:8080/FlightCheckerWS/FlightCheckerWS?xsd=1" uri="wsdl/localhost_8080/FlightCheckerWS/FlightCheckerWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/BankServices/BankServices?wsdl" uri="wsdl/localhost_8080/BankServices/BankServices.wsdl"/>
+    <system systemId="http://localhost:8080/BankServices/BankServices?xsd=1" uri="wsdl/localhost_8080/BankServices/BankServices.xsd_1.xsd"/>
+</catalog>
