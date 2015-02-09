@@ -5,7 +5,6 @@
  */
 package web.services.hw2.travelAgency;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import web.services.hw2.travelAgency.model.Person;
@@ -62,21 +61,19 @@ public class TravelAgencyWS {
      * @return
      */
     @WebMethod(operationName = "checkFlight")
-    public Trip[] checkFlight(@WebParam(name = "destination") String destination, @WebParam(name = "departure") String departure) {
-        if (loggedIn) {
-            List<Trip> trips = new ArrayList<>();
-                web.services.hw2.travelAgency.webService.FlightCheckerWS port = service_flightChecker.getFlightCheckerWSPort();
-            trips = (ArrayList)port.checkFlight(destination, departure);
-            Trip[] tripsArray = new Trip[trips.size()];
-            for (int i = 0; i < trips.size(); i++) {
-                tripsArray[i] = trips.get(i);
-            }
-            return tripsArray;
+    public List<String> checkFlight(@WebParam(name = "destination") String destination, @WebParam(name = "departure") String departure) {
+     //   if (loggedIn) {
+        
+            List<String> trips = new ArrayList<>();
+            //web.services.hw2.travelAgency.webService.FlightCheckerWS port = service_flightChecker.getFlightCheckerWSPort();
+            //trips = (ArrayList)port.checkFlight(destination, departure);
+           trips.add("TESTARARAADS");
+            return trips;
             //return trips.size() > 0 ? trips.toArray((Object[]) Array.newInstance(
             //trips.get(0).getClass(), 0)) : new Object[0];
-        } else {
-            throw new IllegalStateException("Not logged in");
-        }
+    //    } else {
+    //        throw new IllegalStateException("Not logged in");
+    //    }
     }
 
     /**
@@ -86,9 +83,9 @@ public class TravelAgencyWS {
      */
     @WebMethod(operationName = "reserveTrip")
     public boolean reserveTrip(Trip trip) {
-        if (loggedIn) {
+    //        if (loggedIn) {
             return service_flightChecker.getFlightCheckerWSPort().reserve(trip);
-        }else throw new IllegalStateException("Not logged in");
+    //    }else throw new IllegalStateException("Not logged in");
     }
     
     /**
