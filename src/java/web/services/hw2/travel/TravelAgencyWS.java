@@ -32,11 +32,9 @@ public class TravelAgencyWS {
      */
     @WebMethod(operationName = "checkFlight")
     public List<Trip> checkFlight(@WebParam(name = "departure") String departure,@WebParam(name = "destination") String destination)  {
-        System.out.println("hahahahahahahahahahahahahahah");
         List<Trip> trips = new ArrayList<Trip>();
         Flights fl = new Flights();
         trips = fl.findFligts(departure, destination);
-        System.err.println("test " + trips.size());
         return trips;
     }
 
